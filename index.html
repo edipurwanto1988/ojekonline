@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototipe Aplikasi Pesan-Antar - Daftar Isi</title>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body class="hub">
+<div class="app">
+  <header class="index-hero">
+    <span class="tag">Prototipe v2 · Mobile 390px</span>
+    <h1>Pesan-Antar Makanan & Ojek</h1>
+    <p>Daftar isi layar, dikelompokkan per level peran. Klik layar untuk membuka. Semua data contoh.</p>
+  </header>
+
+  <div class="index-stats">
+    <div><b>22</b><span>Layar</span></div>
+    <div><b>4</b><span>Peran</span></div>
+    <div><b>20%</b><span>Komisi</span></div>
+  </div>
+
+  <div class="groups">
+    <section class="group g-auth wide">
+      <h2><span class="lv">L0</span> Autentikasi <small>Semua peran · 4 layar</small></h2>
+      <div class="links">
+        <a class="screen-link" href="auth/login.html"><div class="ico" data-i="lock"></div><div><div class="name">Login</div><div class="desc">User ID + password</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="auth/register-pembeli.html"><div class="ico" data-i="user"></div><div><div class="name">Registrasi Pembeli</div><div class="desc">User ID, nama, WA, alamat</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="auth/register-penjual.html"><div class="ico" data-i="store"></div><div><div class="name">Registrasi Penjual</div><div class="desc">User ID (nama usaha), alamat, WA</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="auth/register-driver.html"><div class="ico" data-i="bike"></div><div><div class="name">Registrasi Driver</div><div class="desc">User ID (nama & nopol), dokumen</div></div><span class="arrow">›</span></a>
+      </div>
+    </section>
+
+    <section class="group g-pembeli">
+      <h2><span class="lv">L1</span> Pembeli <small>7 layar</small></h2>
+      <a class="screen-link" href="pembeli/beranda.html"><div class="ico" data-i="home"></div><div><div class="name">Beranda</div><div class="desc">Daftar tempat usaha, filter, tombol (+)</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="pembeli/usaha.html"><div class="ico" data-i="utensils"></div><div><div class="name">Detail Usaha & Menu</div><div class="desc">Foto, harga, keranjang interaktif</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="pembeli/checkout.html"><div class="ico" data-i="receipt"></div><div><div class="name">Checkout</div><div class="desc">Alamat, ongkir, pilih tunai/QRIS</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="pembeli/nego-ongkir.html"><div class="ico" data-i="handshake"></div><div><div class="name">Tawar Ongkir</div><div class="desc">Validasi batas tawar 70%</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="pembeli/bayar-qris.html"><div class="ico" data-i="qr"></div><div><div class="name">Bayar QRIS</div><div class="desc">QR statis, kode unik, countdown, bukti</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="pembeli/pesanan.html"><div class="ico" data-i="package"></div><div><div class="name">Lacak Pesanan & Chat</div><div class="desc">Peta, timeline, chat driver</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="pembeli/riwayat.html"><div class="ico" data-i="clock"></div><div><div class="name">Riwayat</div><div class="desc">Order selesai dan dibatalkan</div></div><span class="arrow">›</span></a>
+    </section>
+
+    <section class="group g-penjual">
+      <h2><span class="lv">L2</span> Penjual <small>4 layar</small></h2>
+      <a class="screen-link" href="penjual/beranda.html"><div class="ico" data-i="store"></div><div><div class="name">Beranda Penjual</div><div class="desc">Ringkasan, order masuk, status buka</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="penjual/menu.html"><div class="ico" data-i="list"></div><div><div class="name">Kelola Menu</div><div class="desc">Foto, harga, ketersediaan</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="penjual/order-masuk.html"><div class="ico" data-i="bell"></div><div><div class="name">Order Masuk</div><div class="desc">Terima/tolak, tandai tunai</div></div><span class="arrow">›</span></a>
+      <a class="screen-link" href="penjual/saldo.html"><div class="ico" data-i="wallet"></div><div><div class="name">Saldo & Payout</div><div class="desc">Pendapatan, utang tunai, tarik saldo</div></div><span class="arrow">›</span></a>
+
+      <h2 style="margin-top:18px"><span class="lv">L2</span> Driver Delivery <small>4 layar</small></h2>
+      <div class="g-driver">
+        <a class="screen-link" href="driver/beranda.html"><div class="ico" data-i="bike"></div><div><div class="name">Beranda Driver</div><div class="desc">Antrian pembeli terdekat, online/offline</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="driver/order-detail.html"><div class="ico" data-i="pin"></div><div><div class="name">Detail Order & Nego</div><div class="desc">Kontra-tawar, hitung komisi live</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="driver/order-aktif.html"><div class="ico" data-i="truck"></div><div><div class="name">Order Aktif</div><div class="desc">Peta, update status, chat</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="driver/saldo.html"><div class="ico" data-i="card"></div><div><div class="name">Saldo & Utang Tunai</div><div class="desc">Saldo, utang, setoran, tarik saldo</div></div><span class="arrow">›</span></a>
+      </div>
+    </section>
+
+    <section class="group g-admin wide">
+      <h2><span class="lv">L3</span> Admin & Finance <small>3 layar</small></h2>
+      <div class="links">
+        <a class="screen-link" href="admin/verifikasi.html"><div class="ico" data-i="check"></div><div><div class="name">Verifikasi QRIS</div><div class="desc">Antrean bukti, cocokkan mutasi, dua approval</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="admin/payout.html"><div class="ico" data-i="bank"></div><div><div class="name">Payout & Setoran</div><div class="desc">Approve, bukti transfer, setoran tunai</div></div><span class="arrow">›</span></a>
+        <a class="screen-link" href="admin/setting.html"><div class="ico" data-i="gear"></div><div><div class="name">Setting Bisnis</div><div class="desc">Komisi, tarif/km, batas nego, batas utang</div></div><span class="arrow">›</span></a>
+      </div>
+    </section>
+  </div>
+
+  <p class="muted foot">Prototipe statis untuk review alur. Interaksi aktif: keranjang, pilihan bayar, countdown, validasi tawar, chat.</p>
+</div>
+</body>
+</html>

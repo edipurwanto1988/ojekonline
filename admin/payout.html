@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payout & Setoran</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app no-nav">
+  <header class="topbar"><a class="back" href="../index.html">‹</a><h1>Payout & setoran</h1></header>
+
+  <section class="section">
+    <div class="tabs" style="margin:-14px -16px 14px">
+      <div class="on">Payout (2)</div><div>Setoran tunai</div><div>Utang</div>
+    </div>
+
+    <div class="card">
+      <div class="row between"><b>Warung Bu Ani</b><span class="badge warn">Diajukan</span></div>
+      <div class="muted">Rekening BCA ••••4821 · 27 Okt 2026</div>
+      <div class="kv mt-8"><span>Saldo tersedia</span><span>Rp 1.240.000</span></div>
+      <div class="kv"><span>Dipotong utang tunai</span><span>- Rp 35.000</span></div>
+      <div class="kv total"><span>Dibayar</span><span>Rp 300.000</span></div>
+      <div class="upload mt-8" style="padding:14px">🧾 Unggah bukti transfer + no. ref</div>
+      <div class="btn-row mt-12">
+        <span class="btn ghost">Tolak</span>
+        <span class="btn ok">Setujui</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row between"><b>Andi Pratama (Driver)</b><span class="badge warn">Diajukan</span></div>
+      <div class="muted">Rekening BRI ••••1190 · 27 Okt 2026</div>
+      <div class="kv mt-8"><span>Saldo tersedia</span><span>Rp 486.000</span></div>
+      <div class="kv"><span>Dipotong utang tunai</span><span>- Rp 18.000</span></div>
+      <div class="kv total"><span>Dibayar</span><span>Rp 468.000</span></div>
+      <div class="btn-row mt-12"><span class="btn ghost">Tolak</span><span class="btn ok">Setujui</span></div>
+    </div>
+
+    <div class="section-title">Catat setoran tunai</div>
+    <div class="card">
+      <div class="field"><label>Mitra</label><select class="select"><option>Andi Pratama (Driver)</option><option>Warung Bu Ani</option></select></div>
+      <div class="field"><label>Nominal setoran</label><input class="input" value="Rp 18.000"></div>
+      <div class="field"><label>Bukti setoran</label><div class="upload" style="padding:14px">📷 Unggah bukti</div></div>
+      <span class="btn block">Simpan setoran</span>
+    </div>
+  </section>
+</div>
+</body>
+</html>

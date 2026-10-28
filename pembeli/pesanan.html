@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lacak Pesanan & Chat</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><a class="back" href="beranda.html">‹</a><h1>Pesanan #1042</h1><span class="badge blue">Diantar</span></header>
+
+  <section class="section">
+    <div class="map">
+      <svg class="route" viewBox="0 0 358 190" preserveAspectRatio="none"><path d="M60 52 C 130 60, 150 125, 210 100 S 280 110, 296 128" fill="none" stroke="#ee4d2d" stroke-width="4" stroke-dasharray="8 7" stroke-linecap="round"/></svg>
+      <div class="pin a"><span>🍛</span></div>
+      <div class="pin b"><span>🏠</span></div>
+      <div class="rider">🛵</div>
+      <div class="eta">Tiba dalam <b>6 menit</b> · 1,4 km lagi</div>
+    </div>
+
+    <div class="card row">
+      <div class="avatar">AP</div>
+      <div class="grow"><b>Andi Pratama</b><div class="muted">BH 1234 XY · Honda Beat · ⭐ 4,9</div></div>
+      <a class="btn sm outline" href="#chat">Chat</a>
+    </div>
+
+    <div class="section-title">Status</div>
+    <ul class="timeline card" style="padding:16px 14px 2px">
+      <li class="done">Pesanan dibuat<div class="t">13:50</div></li>
+      <li class="done">Pembayaran tunai dipilih<div class="t">13:51</div></li>
+      <li class="done">Diterima penjual<div class="t">13:53</div></li>
+      <li class="done">Driver mengambil pesanan<div class="t">14:10</div></li>
+      <li class="now">Dalam perjalanan ke alamat Anda<div class="t">14:12</div></li>
+      <li>Selesai</li>
+    </ul>
+
+    <div class="section-title">Ringkasan</div>
+    <div class="card">
+      <div class="kv"><span>Ayam Bakar × 1, Sop Iga × 1</span><span>Rp 43.000</span></div>
+      <div class="kv"><span>Ongkir (nego disepakati)</span><span>Rp 6.500</span></div>
+      <div class="kv total"><span>Total</span><span>Rp 49.500</span></div>
+      <div class="notice mt-12" style="margin-bottom:0">Bayar tunai: Rp 43.000 ke penjual, Rp 6.500 ke driver.</div>
+    </div>
+
+    <div class="section-title" id="chat">Chat dengan driver</div>
+    <div class="chat" style="padding-bottom:8px">
+      <div class="bubble in">Halo kak, pesanan sudah saya ambil, otw ya.<div class="t">14:10</div></div>
+      <div class="bubble out">Siap, rumah pagar hijau ya.<div class="t">14:11 ✓✓</div></div>
+      <div class="bubble in">Oke, 5 menit lagi sampai.<div class="t">14:12</div></div>
+    </div>
+  </section>
+
+  <div class="chat-input">
+    <input class="input" placeholder="Tulis pesan ke driver...">
+    <span class="btn sm">Kirim</span>
+  </div>
+</div>
+</body>
+</html>

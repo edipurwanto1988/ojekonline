@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><a class="back" href="usaha.html">‹</a><h1>Checkout</h1></header>
+
+  <section class="section">
+    <div class="section-title">Alamat pengantaran <a href="#">Ubah</a></div>
+    <div class="card row">
+      <div class="thumb" style="width:44px;height:44px;font-size:20px">📍</div>
+      <div class="grow"><b>Rumah</b><div class="muted">Jl. Melati No. 12, RT 03 · patokan pagar hijau</div></div>
+    </div>
+
+    <div class="section-title">Pesanan · Warung Bu Ani</div>
+    <div class="card">
+      <div class="kv"><span>Ayam Bakar × 1</span><span>Rp 18.000</span></div>
+      <div class="kv"><span>Sop Iga × 1</span><span>Rp 25.000</span></div>
+      <div class="kv total"><span>Subtotal makanan</span><span>Rp 43.000</span></div>
+    </div>
+
+    <div class="section-title">Ongkir ojek</div>
+    <div class="card">
+      <div class="kv"><span>Jarak 4,2 km × Rp 2.000/km</span><span>Rp 8.400</span></div>
+      <div class="kv"><span>Estimasi ongkir</span><span class="price">Rp 8.400</span></div>
+      <div class="btn-row mt-12">
+        <a class="btn ghost sm" href="nego-ongkir.html">🤝 Tawar ongkir</a>
+        <span class="btn outline sm" data-toast="Ongkir Rp 8.400 dipilih">Pakai estimasi</span>
+      </div>
+      <p class="hint">Batas tawar terendah 70% dari estimasi (Rp 5.880).</p>
+    </div>
+
+    <div class="section-title">Metode pembayaran</div>
+    <div class="card">
+      <label class="pay-opt on" data-pay="cash">
+        <span class="ic">💵</span>
+        <span class="grow"><b>Tunai</b><div class="muted">Makanan ke penjual, ongkir ke driver</div></span>
+        <input type="radio" name="pay" checked>
+      </label>
+      <label class="pay-opt" data-pay="qris">
+        <span class="ic">📱</span>
+        <span class="grow"><b>QRIS</b><div class="muted">Scan QRIS perusahaan, unggah bukti</div></span>
+        <input type="radio" name="pay">
+      </label>
+    </div>
+
+    <div class="notice" id="payNotice">Tunai: bayar makanan ke penjual dan ongkir ke driver.</div>
+
+    <div class="card">
+      <div class="kv"><span>Makanan</span><span>Rp 43.000</span></div>
+      <div class="kv"><span>Ongkir</span><span>Rp 8.400</span></div>
+      <div class="kv total"><span>Total</span><span>Rp 51.400</span></div>
+    </div>
+  </section>
+
+  <div class="sticky-cta">
+    <a class="btn block" id="orderBtn" href="pesanan.html">Pesan sekarang</a>
+  </div>
+</div>
+</body>
+</html>

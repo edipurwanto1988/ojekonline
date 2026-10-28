@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldo & Utang Tunai</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><h1>Saldo & utang</h1></header>
+
+  <section class="section">
+    <div class="hero">
+      <div class="muted">Saldo bisa ditarik</div>
+      <div style="font-size:26px; font-weight:800">Rp 486.000</div>
+      <div class="muted">Dipotong utang tunai Rp 18.000 otomatis</div>
+      <span class="btn block mt-12" style="background:#fff; color:var(--primary)">Ajukan tarik saldo</span>
+    </div>
+
+    <div class="card mt-12" style="border-color:#fecaca">
+      <div class="row between"><b>Utang tunai ke perusahaan</b><span class="badge danger">Rp 18.000</span></div>
+      <div class="muted mt-8">Batas utang Rp 100.000. Sisa ruang: Rp 82.000.</div>
+      <div class="progress" style="height:8px; background:var(--line); border-radius:999px; margin-top:8px"><div style="width:18%; height:100%; background:var(--danger); border-radius:999px"></div></div>
+      <div class="btn-row mt-12">
+        <span class="btn outline sm">Setor tunai</span>
+        <span class="btn ghost sm">Riwayat setoran</span>
+      </div>
+    </div>
+
+    <div class="section-title">Rincian utang</div>
+    <div class="list-item"><div class="grow"><b>#1039</b><div class="muted">Ongkir Rp 15.000 · komisi 20%</div></div><span class="price">Rp 3.000</span></div>
+    <div class="list-item"><div class="grow"><b>#1036</b><div class="muted">Ongkir Rp 75.000 · komisi 20%</div></div><span class="price">Rp 15.000</span></div>
+
+    <div class="section-title">Riwayat saldo</div>
+    <div class="list-item"><div class="grow"><b>Order #1042 (QRIS)</b><div class="muted">Bagian kamu 80% dari ongkir</div></div><span class="price" style="color:var(--ok)">+ Rp 9.600</span></div>
+    <div class="list-item"><div class="grow"><b>Payout ke BCA</b><div class="muted">10 Okt 2026 · Ref TRX98231</div></div><span class="price">- Rp 300.000</span></div>
+  </section>
+
+  <nav class="bottom-nav">
+    <a href="beranda.html"><span class="i">🛵</span>Antrian</a>
+    <a href="order-aktif.html"><span class="i">🚚</span>Aktif</a>
+    <a class="on" href="saldo.html"><span class="i">💳</span>Saldo</a>
+    <a href="../auth/login.html"><span class="i">👤</span>Akun</a>
+  </nav>
+</div>
+</body>
+</html>

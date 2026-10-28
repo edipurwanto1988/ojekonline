@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kelola Menu</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><h1>Kelola menu</h1><span class="btn sm">+ Menu</span></header>
+
+  <section class="section">
+    <div class="search">🔍 <span>Cari menu</span></div>
+    <div class="chips mt-12"><span class="chip on">Semua (8)</span><span class="chip">Nasi</span><span class="chip">Lauk</span><span class="chip">Minuman</span></div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="list-item">
+      <div class="thumb">🍗</div>
+      <div class="grow"><b>Ayam Bakar</b><div class="price">Rp 18.000</div></div>
+      <span class="switch on"></span>
+    </div>
+    <div class="list-item">
+      <div class="thumb">🍲</div>
+      <div class="grow"><b>Sop Iga</b><div class="price">Rp 25.000</div></div>
+      <span class="switch on"></span>
+    </div>
+    <div class="list-item">
+      <div class="thumb">🥤</div>
+      <div class="grow"><b>Es Teh Manis</b><div class="price">Rp 5.000</div></div>
+      <span class="switch on"></span>
+    </div>
+    <div class="list-item" style="opacity:.6">
+      <div class="thumb">🍛</div>
+      <div class="grow"><b>Nasi Rendang</b><div class="price">Rp 22.000</div><span class="badge danger">Stok habis</span></div>
+      <span class="switch"></span>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="section-title">Form tambah / ubah menu</div>
+    <div class="card">
+      <div class="field"><label>Foto menu</label><div class="upload" style="padding:14px">📷 Unggah foto</div></div>
+      <div class="field"><label>Nama menu</label><input class="input" value="Ayam Bakar"></div>
+      <div class="field"><label>Harga (Rp)</label><input class="input" value="18000" inputmode="numeric"></div>
+      <div class="field"><label>Kategori</label><select class="select"><option>Lauk</option><option>Nasi</option><option>Minuman</option></select></div>
+      <div class="btn-row"><span class="btn ghost">Batal</span><span class="btn">Simpan</span></div>
+    </div>
+  </section>
+
+  <nav class="bottom-nav">
+    <a href="beranda.html"><span class="i">🏪</span>Beranda</a>
+    <a class="on" href="menu.html"><span class="i">📋</span>Menu</a>
+    <a href="order-masuk.html"><span class="i">🔔</span>Order</a>
+    <a href="saldo.html"><span class="i">💰</span>Saldo</a>
+  </nav>
+</div>
+</body>
+</html>

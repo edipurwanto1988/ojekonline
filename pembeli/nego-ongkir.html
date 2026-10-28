@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tawar Ongkir</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><a class="back" href="checkout.html">‹</a><h1>Tawar Ongkir</h1></header>
+
+  <section class="section">
+    <div class="hero">
+      <div class="muted">Estimasi ongkir</div>
+      <div class="big">Rp 8.400</div>
+      <div class="muted">Warung Bu Ani → Jl. Melati 12 · 4,2 km × Rp 2.000/km</div>
+    </div>
+
+    <div class="stat-grid mt-12">
+      <div class="stat"><div class="muted">Batas tawar (70%)</div><div class="val">Rp 5.880</div></div>
+      <div class="stat"><div class="muted">Tarif minimum</div><div class="val">Rp 5.000</div></div>
+    </div>
+
+    <div class="section-title mt-12">Tawaran Anda</div>
+    <div class="field input-money">
+      <input class="input" id="negoInput" value="6500" inputmode="numeric" data-floor="5880" data-hint="#negoHint" data-btn="#negoBtn">
+      <div class="hint" id="negoHint">Minimal Rp 5.880</div>
+    </div>
+
+    <div class="section-title">Riwayat tawaran</div>
+    <ul class="timeline card" style="padding:16px 14px 2px">
+      <li class="done"><b>Anda</b> menawar <span data-mirror="negoInput">Rp 6.500</span><div class="t">14:02 · putaran 1 dari 3</div></li>
+      <li class="now"><b>Driver</b> sedang menimbang tawaran<div class="t">sisa waktu 2 menit</div></li>
+      <li>Driver setuju atau kontra-tawar (maks. 3 putaran)</li>
+    </ul>
+    <p class="hint" style="text-align:center">Timeout 2 menit per putaran. Harga final dikunci ke order.</p>
+  </section>
+
+  <div class="sticky-cta">
+    <div class="btn-row">
+      <a class="btn ghost" href="checkout.html">Pakai estimasi</a>
+      <a class="btn" id="negoBtn" href="pesanan.html">Kirim tawaran</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

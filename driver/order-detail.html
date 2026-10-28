@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Detail Order & Nego</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><a class="back" href="beranda.html">‹</a><h1>Order #1043</h1><span class="badge warn">Tawaran</span></header>
+
+  <section class="section">
+    <div class="map" style="height:150px">
+      <svg class="route" viewBox="0 0 358 150" preserveAspectRatio="none"><path d="M60 45 C 130 50, 150 100, 210 82 S 280 95, 296 102" fill="none" stroke="#141824" stroke-width="4" stroke-dasharray="8 7" stroke-linecap="round"/></svg>
+      <div class="pin a"><span>🍛</span></div>
+      <div class="pin b"><span>🏠</span></div>
+      <div class="eta">3,5 km · ± 12 menit</div>
+    </div>
+
+    <div class="card">
+      <div class="kv"><span>📍 Jemput</span><span>Warung Bu Ani</span></div>
+      <div class="kv"><span>🏁 Antar</span><span>Budi · Jl. Kenanga 4</span></div>
+      <div class="kv"><span>Pembayaran</span><span class="badge warn">Tunai</span></div>
+      <div class="divider"></div>
+      <div class="kv"><span>Estimasi (3,5 km × Rp 2.000)</span><span>Rp 7.000</span></div>
+      <div class="kv"><span>Tawaran pembeli</span><span class="price" style="color:var(--primary)">Rp 6.500</span></div>
+    </div>
+
+    <div class="section-title">Negosiasi</div>
+    <ul class="timeline card" style="padding:16px 14px 2px">
+      <li class="done"><b>Pembeli</b> menawar Rp 6.500<div class="t">14:02 · putaran 1</div></li>
+      <li class="now"><b>Anda</b> setuju atau kontra-tawar<div class="t">sisa 1:45 · putaran 2 dari 3</div></li>
+    </ul>
+
+    <div class="section-title">Kontra-tawar</div>
+    <div class="field input-money">
+      <input class="input" id="counterInput" value="7000" inputmode="numeric" data-floor="4900" data-hint="#counterHint" data-btn="#counterBtn" data-comm="#commAmt" data-net="#netAmt" data-pct="20">
+      <div class="hint" id="counterHint">Minimal Rp 4.900</div>
+    </div>
+
+    <div class="card">
+      <div class="kv"><span>Ongkir</span><span data-mirror="counterInput">Rp 7.000</span></div>
+      <div class="kv"><span>Komisi perusahaan 20%</span><span id="commAmt">Rp 1.400</span></div>
+      <div class="kv total"><span>Anda terima</span><span id="netAmt" style="color:var(--ok)">Rp 5.600</span></div>
+      <div class="hint">Order tunai: komisi dicatat sebagai utang ke perusahaan.</div>
+    </div>
+  </section>
+
+  <div class="sticky-cta">
+    <div class="btn-row">
+      <a class="btn ghost" href="beranda.html">Tolak</a>
+      <a class="btn outline" id="counterBtn" href="order-aktif.html">Kontra</a>
+      <a class="btn ok" href="order-aktif.html">Setuju</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

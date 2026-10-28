@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setting Bisnis</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app no-nav">
+  <header class="topbar"><a class="back" href="../index.html">‹</a><h1>Setting bisnis</h1></header>
+
+  <section class="section">
+    <div class="notice blue">Setiap perubahan tercatat di audit log dan berlaku mulai tanggal yang dipilih.</div>
+
+    <div class="section-title">Komisi</div>
+    <div class="card">
+      <div class="field"><label>Komisi default (% dari total order)</label><input class="input" value="20"></div>
+      <div class="field"><label>Override per mitra</label><div class="list-item" style="margin:0"><span class="grow">Warung Bu Ani</span><span class="badge">Default</span></div></div>
+      <div class="field"><label>Berlaku mulai</label><input class="input" value="01 Nov 2026" ></div>
+    </div>
+
+    <div class="section-title">Tarif ojek</div>
+    <div class="card">
+      <div class="field"><label>Tarif per km (Rp)</label><input class="input" value="2000" inputmode="numeric"></div>
+      <div class="field"><label>Tarif minimum (Rp)</label><input class="input" value="5000" inputmode="numeric"></div>
+      <div class="field"><label>Batas tawar pembeli (% dari estimasi)</label><input class="input" value="70" inputmode="numeric"><div class="hint">Tawaran tidak boleh di bawah persentase ini.</div></div>
+    </div>
+
+    <div class="section-title">Utang & payout</div>
+    <div class="card">
+      <div class="field"><label>Batas utang tunai (Rp)</label><input class="input" value="100000" inputmode="numeric"></div>
+      <div class="field"><label>Minimum tarik saldo (Rp)</label><input class="input" value="50000" inputmode="numeric"></div>
+      <div class="field"><label>Ambang dua approval (Rp)</label><input class="input" value="1000000" inputmode="numeric"></div>
+    </div>
+
+    <div class="section-title">Pencarian driver</div>
+    <div class="card">
+      <div class="field"><label>Radius notifikasi order (km)</label><input class="input" value="3"></div>
+    </div>
+
+    <span class="btn block">Simpan perubahan</span>
+  </section>
+</div>
+</body>
+</html>

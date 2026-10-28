@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verifikasi QRIS</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app no-nav">
+  <header class="topbar"><a class="back" href="../index.html">‹</a><h1>Verifikasi QRIS</h1><span class="badge">3 antre</span></header>
+
+  <section class="section">
+    <div class="notice">Cocokkan nominal + kode unik dengan mutasi rekening, lalu verifikasi.</div>
+
+    <div class="card">
+      <div class="row between"><b>Order #1042 · Siti</b><span class="badge warn">Menunggu</span></div>
+      <div class="kv mt-8"><span>Nominal</span><span class="price">Rp 49.737</span></div>
+      <div class="kv"><span>Kode unik</span><span>237</span></div>
+      <div class="kv"><span>Diunggah</span><span>14:20 (3 menit lalu)</span></div>
+      <div class="upload mt-8" style="padding:18px">🧾 Lihat bukti bayar</div>
+      <div class="field mt-12"><label>Cocokkan dengan mutasi</label>
+        <select class="select"><option>Mutasi 14:19 · Rp 49.737 · CR QRIS</option><option>Tidak ada yang cocok</option></select>
+      </div>
+      <div class="btn-row">
+        <span class="btn ghost">Tolak</span>
+        <span class="btn ok">Verifikasi</span>
+      </div>
+      <div class="hint mt-8">Nominal di atas Rp 1.000.000 butuh 2 approval.</div>
+    </div>
+
+    <div class="card">
+      <div class="row between"><b>Order #1045 · Tono</b><span class="badge danger">Melewati SLA</span></div>
+      <div class="kv mt-8"><span>Nominal</span><span class="price">Rp 34.112</span></div>
+      <div class="kv"><span>Diunggah</span><span>13:58 (25 menit lalu)</span></div>
+      <div class="btn-row mt-12"><span class="btn ghost">Tolak</span><span class="btn ok">Verifikasi</span></div>
+    </div>
+
+    <div class="section-title">Dana tak terpasangkan</div>
+    <div class="list-item">
+      <div class="grow"><b>Rp 25.000</b><div class="muted">Mutasi 12:40 · tidak cocok order</div></div>
+      <span class="btn sm outline">Tinjau</span>
+    </div>
+  </section>
+</div>
+</body>
+</html>

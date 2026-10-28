@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saldo & Payout</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><h1>Saldo & payout</h1></header>
+
+  <section class="section">
+    <div class="hero">
+      <div class="muted">Saldo bisa ditarik</div>
+      <div style="font-size:26px; font-weight:800">Rp 1.240.000</div>
+      <div class="muted">Minimum tarik Rp 50.000 · Rekening BCA ••••4821</div>
+      <span class="btn ok block mt-12" style="background:#fff; color:var(--primary)">Ajukan tarik saldo</span>
+    </div>
+
+    <div class="stat-grid mt-12">
+      <div class="stat"><div class="muted">Penjualan QRIS</div><div class="val">Rp 812.000</div></div>
+      <div class="stat"><div class="muted">Utang tunai</div><div class="val" style="color:var(--danger)">Rp 35.000</div></div>
+    </div>
+
+    <div class="notice mt-12">Utang tunai sebesar Rp 35.000 akan dipotong otomatis dari payout berikutnya. Batas utang: Rp 100.000.</div>
+
+    <div class="section-title">Rincian utang tunai</div>
+    <div class="card">
+      <div class="kv"><span>#1040 · komisi 20% dari Rp 25.000</span><span>Rp 5.000</span></div>
+      <div class="kv"><span>#1039 · komisi 20% dari Rp 150.000</span><span>Rp 30.000</span></div>
+      <div class="kv total"><span>Total utang</span><span>Rp 35.000</span></div>
+    </div>
+
+    <div class="section-title">Riwayat payout</div>
+    <div class="list-item">
+      <div class="grow"><b>Rp 500.000</b><div class="muted">10 Okt 2026 · Ref TRX98231</div></div>
+      <span class="badge ok">Dibayar</span>
+    </div>
+    <div class="list-item">
+      <div class="grow"><b>Rp 300.000</b><div class="muted">Diajukan 27 Okt 2026</div></div>
+      <span class="badge warn">Menunggu</span>
+    </div>
+  </section>
+
+  <nav class="bottom-nav">
+    <a href="beranda.html"><span class="i">🏪</span>Beranda</a>
+    <a href="menu.html"><span class="i">📋</span>Menu</a>
+    <a href="order-masuk.html"><span class="i">🔔</span>Order</a>
+    <a class="on" href="saldo.html"><span class="i">💰</span>Saldo</a>
+  </nav>
+</div>
+</body>
+</html>

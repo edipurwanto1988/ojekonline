@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bayar QRIS</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><a class="back" href="checkout.html">‹</a><h1>Bayar QRIS</h1><span class="timer" data-countdown="900">15:00</span></header>
+
+  <section class="section">
+    <div class="qr-box">
+      <div class="qr-head">
+        <div><div class="logo">QRIS</div><div class="muted">PT Contoh Maju · NMID ID10230045</div></div>
+        <span class="badge primary">Statis</span>
+      </div>
+      <div class="qr-art"><span class="eye e1"></span><span class="eye e2"></span><span class="eye e3"></span><span class="mid">QRIS</span></div>
+      <div class="muted mt-16">Nominal yang harus dibayar</div>
+      <div class="amount-big">Rp 51.<span class="code">637</span></div>
+      <div class="muted">Rp 51.400 + kode unik <b>Rp 237</b> · <span class="copy" data-copy="51637">Salin nominal</span></div>
+    </div>
+
+    <div class="notice mt-12">Ketik nominal persis Rp 51.637 saat scan. Kode unik membantu Finance mencocokkan pembayaran.</div>
+
+    <div class="section-title">Cara bayar</div>
+    <ul class="timeline card" style="padding:16px 14px 2px">
+      <li class="done">Buka m-banking / e-wallet, scan QR di atas</li>
+      <li class="now">Masukkan nominal <b>Rp 51.637</b>, lalu bayar</li>
+      <li>Unggah screenshot bukti bayar di bawah</li>
+      <li>Finance memverifikasi, pesanan diteruskan ke penjual</li>
+    </ul>
+
+    <div class="section-title">Bukti pembayaran</div>
+    <div class="upload">📷<br><b>Unggah screenshot bukti bayar</b><div class="hint">JPG/PNG, maks. 2 MB</div></div>
+
+    <div class="card mt-12">
+      <div class="kv"><span>Status</span><span class="badge warn">Menunggu bukti</span></div>
+      <div class="kv"><span>No. pesanan</span><span>#1042</span></div>
+    </div>
+  </section>
+
+  <div class="sticky-cta">
+    <div class="btn-row">
+      <a class="btn ghost" href="pesanan.html">Nanti</a>
+      <a class="btn" href="pesanan.html">Kirim bukti</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

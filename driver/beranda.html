@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beranda Driver</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="grow"><div class="muted">Andi Pratama · BH 1234 XY</div><div style="font-weight:700">Antrian pembeli</div></div>
+    <a class="back" href="../index.html" title="Daftar isi">☰</a>
+  </header>
+
+  <section class="section">
+    <div class="card flat row between">
+      <div><b>Status</b><div class="muted">Online · radius 3 km</div></div>
+      <span class="switch on"></span>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="muted">Pendapatan hari ini</div><div class="val">Rp 124.000</div></div>
+      <div class="stat"><div class="muted">Utang tunai</div><div class="val" style="color:var(--danger)">Rp 18.000</div></div>
+    </div>
+
+    <div class="notice mt-12">Ada 2 pembeli baru di sekitar Anda.</div>
+
+    <div class="section-title">Antrian terdekat</div>
+    <a class="card" href="order-detail.html" style="display:block">
+      <div class="row between"><b>#1043 · Budi</b><span class="badge primary">0,8 km</span></div>
+      <div class="muted mt-8">📍 Dari Warung Bu Ani → Jl. Kenanga 4</div>
+      <div class="row between mt-8">
+        <span>Estimasi <b>Rp 7.000</b></span>
+        <span class="badge warn">Tunai</span>
+      </div>
+    </a>
+
+    <a class="card" href="order-detail.html" style="display:block">
+      <div class="row between"><b>#1044 · Rina</b><span class="badge primary">2,1 km</span></div>
+      <div class="muted mt-8">📍 Dari Kopi Senja → Jl. Mawar 9</div>
+      <div class="row between mt-8">
+        <span>Estimasi <b>Rp 9.800</b></span>
+        <span class="badge ok">QRIS</span>
+      </div>
+    </a>
+
+    <div class="card flat" style="text-align:center; color:var(--muted)">Pembeli baru akan muncul otomatis.</div>
+  </section>
+
+  <nav class="bottom-nav">
+    <a class="on" href="beranda.html"><span class="i">🛵</span>Antrian</a>
+    <a href="order-aktif.html"><span class="i">🚚</span>Aktif</a>
+    <a href="saldo.html"><span class="i">💳</span>Saldo</a>
+    <a href="../auth/login.html"><span class="i">👤</span>Akun</a>
+  </nav>
+</div>
+</body>
+</html>
